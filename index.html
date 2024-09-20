@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Keeper app | Note-taking</title>
+    <meta name="title" content="Notes appl - Your Everyday Notes | Effortless Note-taking">
+    <meta name="title" content="Streamline your daily note-taking with Notekeeper. Organize, access, and enhance productivity with ease. Your go-to platform for managing your everyday notes.
+    ">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/xml">
+    <!-- Theme js -->
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Material Icon link -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Custom css -->
+     <link rel="stylesheet" href="./src/style.css">
+    <!-- Custom JavaScript -->
+    <script src="./src/js/theme.js " defer></script>
+</head>
+
+<body>
+    <header class="sidebar" data-sidebar>
+        <div class="wrapper top-wrapper wrapper-1">
+            <a href="/">
+                <img src="./src/images/logo-light.svg" alt="NotesLogo" class="logo-light">
+                <img src="./src/images/logo-dark.svg" alt="NotesLogo" class="logo-dark">
+            </a>
+            <button class="menu-btn icon-btn large" aria-label="Close menu" data-sidebar-toggler>
+                <span class="material-symbols-rounded" aria-hidden="true">close</span>
+                <div class="state-layer"></div>
+            </button>
+        </div>
+        
+            <h2 class="text-title-small">Weather App by SIJAN DAHAL</h2>
+            <form class="formSubmit">
+                <label for="cityName" class="block text-lg font-semibold mb-2">Enter City Name:</label>
+                <input type="text" id="cityName" placeholder="e.g., Mankato"
+                    class="">
+                <button type="submit"
+                    class="btn large">Submit</button>
+            </form>
+    
+    <div class="cp-info">
+        <span class="text-label-large">Copyright 2024
+            <strong>Sijan Dahal</strong>
+        </span>
+    </div>
+</header>
+<div class="overlay" data-sidebar-overlay data-sidebar-toggler></div>
+
+<main class="main">
+    <div class="header">
+        <div class="wrapper">
+            <p class="title text-title-large" data-greeting>
+                Good Morning
+            </p>
+            <span class="text text-body-medium" data-current-date>Sat, Sep 22 2023</span>
+        </div>
+        <button class="theme-btn icon-btn large" aria-label="Toggle-theme" data-tooltip="data-theme-btn" data-theme-btn>
+            <span class="material-symbols-rounded dark-icon" aria-hidden="true">dark_mode</span>
+            <span class="material-symbols-rounded light-icon" aria-hidden="true">light_mode</span>
+            <div class="state-layer"></div>
+        </button>
+        <button class="menu-btn icon-btn large" aria-label="Open menu" data-sidebar-toggler>
+            <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+            <div class="state-layer"></div>
+        </button>
+    </div>
+    
+    <h2 class="title text-title-medium" data-city-name>Dashboard
+    </h2>
+    <div class="weatherDetails"></div>
+    
+    <!-- Floating action button for mobile -->
+    
+    <button class="fab" aria-label="New Note" data-note-create-btn>
+        <span class="text text-label-large">GET Current Forecast</span>
+        <div class="state-layer"></div>
+    </button>
+</main>
+<script src="./src/js/script.js"></script>
+</body>
+
+</html>

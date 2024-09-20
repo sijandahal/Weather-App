@@ -10,9 +10,6 @@ const toggleActive = () =>{
 $toggleButtons.forEach(elem=> 
     elem.addEventListener("click", toggleActive))
 
-
-
-
 // initialize value where it holds the name of the city.
 let cityValue = "kathmandu";
 
